@@ -16,7 +16,7 @@ git add -u-->バージョン管理されていて、変更されたファイル�
 リモートリポジトリの最新の履歴を取得
 
 ⑤マージ
-コマンド-->git merge --allow-unrelated-histories origin/main
+コマンド-->git merge --allow-unrelated-histories origin/master
 --allow-unrelated-historiesを付けないと、以下のエラーが出る場合がある
 
 fatal: refusing to merge unrelated histories
@@ -25,7 +25,7 @@ fatal: refusing to merge unrelated histories
 マージ実行時に「Please enter a commit message to explain why this merge is necessary・・・」が表示される場合があります。これは、マージの理由をコミットメッセージで説明してね、ということでviエディタというものが起動している状態なわけですが、特筆すべきことがなければ:q!を入力すればviエディタを抜けられます。
 
 ⑥プッシュ
-コマンド-->git push origin main
+コマンド-->git push origin master
 以下のようなエラーが出る場合、④⑤をスキップしていると思われる
 
 ! [rejected]        master -> master (fetch first)
